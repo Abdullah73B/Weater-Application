@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="./video/weather.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container text-center mt-5">
+        <h1 class="display-4 mb-4">Weather App</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="locationInput" placeholder="Enter a city">
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="searchButton">Search</button>
+            </div>
+        </div>
+        <div class="weather-info">
+            <h2 id="location" class="text-info"></h2>
+            <p id="temperature" class="font-weight-bold mb-1"></p>
+            <p id="description"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
